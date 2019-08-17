@@ -36,6 +36,8 @@ export default {
   align-items: center;
   .logo{
     justify-self: center;
+    width: 400px;
+    margin-top: 2rem;
   }
 }
 </style>
