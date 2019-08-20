@@ -5,10 +5,10 @@
         <br />
         <input type="password" v-model="password" placeholder="Password" />
         <br />
-        <button @click="login">Connection</button>
+        <button @click="login">Entrar</button>
         <p>
-            You don't have an account ? You can
-            <router-link to="/sign-up">create one</router-link>
+            Ainda não tem uma conta? Você pode
+            <router-link to="/sign-up">criar uma agora.</router-link>
         </p>
     </div>
 </template>
