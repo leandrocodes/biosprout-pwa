@@ -1,11 +1,11 @@
-import Vue from 'vue';
-import firebase from 'firebase';
+import Vue from 'vue'
+import firebase from 'firebase'
 import App from './App.vue';
-import router from './router';
+import router from './router'
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
-let app = '';
+let app = ''
 const config = {
   apiKey: "AIzaSyAKWTlQHKeJ70Rdj-i72hTVTSbCvKvhS28",
   authDomain: "zooware-4096e.firebaseapp.com",
@@ -14,9 +14,9 @@ const config = {
   storageBucket: "zooware-4096e.appspot.com",
   messagingSenderId: "1006273390199",
   appId: "1:1006273390199:web:0ead82fc8a64fdc2"
-};
+}
 
-firebase.initializeApp(config);
+firebase.initializeApp(config)
 
 firebase.auth().onAuthStateChanged(() => {
   if (!app) {
@@ -24,6 +24,6 @@ firebase.auth().onAuthStateChanged(() => {
     app = new Vue({
       router,
       render: h => h(App)
-    }).$mount('#app');
+    }).$mount('#app')
   }
-});
+})
