@@ -1,11 +1,6 @@
 .DS_Store
 node_modules
 /dist
-/report
-
-/tests/e2e/videos/
-/tests/e2e/screenshots/
-/src/keras-model
 
 # local env files
 .env.local
@@ -18,10 +13,9 @@ yarn-error.log*
 
 # Editor directories and files
 .idea
-.firebase
-firebase-debug.log
+.vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw*
+*.sw?
