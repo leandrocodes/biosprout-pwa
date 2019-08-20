@@ -1,18 +1,18 @@
 <template>
     <div class="home">
-        <HelloWorld msg="Welcome to Your Vue.js App" />
         <button @click="logout">Logout</button>
+        <Predict msg="Welcome to Your Vue.js App" />
     </div>
 </template>
 
 <script>
 import firebase from "firebase"
-import HelloWorld from "@/components/HelloWorld.vue"
+import Predict from "@/components/Predict.vue"
 
 export default {
     name: "home",
     components: {
-        HelloWorld
+        Predict
     },
     methods: {
         logout: function() {
