@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/biosprout.png"> -->
+    <img class="logo" alt="Vue logo" src="./assets/biosprout.png">
     <router-view/>
   </div>
 </template>
@@ -24,5 +24,8 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+.logo{
+  height: 275px;
 }
 </style>
