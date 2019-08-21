@@ -11,7 +11,7 @@
 
 <script>
 import * as tf from "@tensorflow/tfjs"
-const model = tf.loadLayersModel('../json-model/model.json') 
+const model = tf.loadLayersModel('@/json-model/model.json') 
 
 export default {
     data() {
