@@ -16,7 +16,8 @@ const router = new Router({
     },
     {
       path: '/',
-      redirect: '/login'
+      // redirect: '/login'
+      redirect: '/home'
     },
     {
       path: '/login',
@@ -32,9 +33,9 @@ const router = new Router({
       path: '/home',
       name: 'Home',
       component: Home,
-      meta: {
+      /* meta: {
         requiresAuth: true
-      }
+      } */
     }
   ]
 });
