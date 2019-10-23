@@ -39,7 +39,7 @@ export default {
             // console.log(input.files)
             const example = tf.fromPixels(this.imageData)
             const prediction = model.predict(example)
-           console.log(prediction)
+            console.log(prediction)
         }
     }
 }
