@@ -11,10 +11,12 @@
 
 <script>
 import * as tf from "@tensorflow/tfjs"
+const modelo = JSON.parse('../json-model/model.json')
+//console.log(modelo)
 let model
 const loadModel = async () => {
   model = await tf.loadLayersModel('../json-model/model.json')
-  console.log(model)
+  //console.log(model)
 }
 loadModel()
 
@@ -36,8 +38,8 @@ export default {
         reader.readAsDataURL(input.files[0])
       }
       // console.log(input.files)
-      const example = tf.fromPixels(this.imageData)
-      const prediction = model.predict(example)
+      //const example = tf.fromPixels(this.imageData)
+      //const prediction = model.predict(example)
       // console.log(prediction)
     }
   }
