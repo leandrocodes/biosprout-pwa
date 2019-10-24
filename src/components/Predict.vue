@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     async predictImage (event) {
-      const model = await tf.loadLayersModel('https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json');
+      const model = await tf.loadLayersModel('');
       console.log(model.summary())
       var input = event.target
       if (input.files && input.files[0]) {
@@ -31,8 +31,8 @@ export default {
         reader.readAsDataURL(input.files[0])
       }
       // console.log(input.files)
-      //const example = tf.fromPixels(this.imageData)
-      //const prediction = model.predict(example)
+      // const example = tf.fromPixels(this.imageData)
+      // const prediction = model.predict(example)
       // console.log(prediction)
     }
   }
